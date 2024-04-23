@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a global font family using Google Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Center the main content horizontally */
+main {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+}
+
+/* Style header section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    border-radius: 50%; /* Rounded profile image */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    display: flex;
+    justify-content: center; /* Center align links */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Main section layout using CSS Grid */
+main {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling for links */
+a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
