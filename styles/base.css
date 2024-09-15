@@ -1,73 +1,196 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ul {
+/* ===== Reset Styles ===== */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
 
-/* Set a global font family using Google Fonts */
+/* ===== Base Styles ===== */
 body {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the body is at least as tall as the viewport */
+    margin: 0;
+    /* Remove default margin */
 }
 
-/* Center the main content horizontally */
+a {
+    color: #007bff;
+    /* Blue link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* ===== Layout Styles ===== */
 main {
-    max-width: 800px; /* Adjust max-width as needed */
-    margin: 0 auto; /* Center align */
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    margin: 0 auto;
+    /* Center align */
     padding: 20px;
+    display: grid;
+    /* Main section layout using CSS Grid */
+    gap: 20px;
+    flex: 1;
+    /* Allows the main content to grow and take up space */
 }
 
-/* Style header section */
-header {
+main h2 {
     text-align: center;
+    /* Centers the h2 text */
+    position: relative;
+    /* Position relative to allow pseudo-element placement */
     margin-bottom: 20px;
+    /* Add some space below the h2 */
+}
+
+main h2::after {
+    content: '';
+    /* Creates a pseudo-element for the underline */
+    display: block;
+    width: 100%;
+    /* Set the width of the underline, adjust as needed */
+    height: 2px;
+    /* Thickness of the underline, matching the section outline */
+    background-color: #ccc;
+    /* Match the outline color of your sections */
+    margin: 10px auto 0;
+    /* Center the underline and add space above */
+}
+
+/* ===== Header Styles ===== */
+header {
+    display: flex;
+    /* Use Flexbox to place items in a row */
+    align-items: center;
+    /* Vertically centers items */
+    justify-content: center;
+    /* Horizontally centers the content */
+    margin-bottom: 0px;
+    /* Maintain existing spacing below the header */
+    gap: 16px;
+    /* Space between the profile image and the h1 */
+    background-color: #1d4d72;
+    /* Header background color */
+    padding: 40px 20px 20px;
+    /* Adds more padding on top, then sides and bottom */
 }
 
 header img {
-    border-radius: 50%; /* Rounded profile image */
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100px;
+    /* Set width to make the image square */
+    height: 100px;
+    /* Set height to match width */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    border-radius: 0;
+    /* No rounded corners, keeps the image square */
 }
 
-/* Navigation styling */
+header h1 {
+    font-size: 2em;
+    /* Adjust font size as needed */
+    margin: 0;
+    /* Remove default margin */
+    color: white !important;
+    /* White text for contrast against the header background */
+}
+
+/* ===== Navigation Styles ===== */
 nav ul {
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none;
+    /* Remove bullets */
+    margin: 0;
+    /* Remove default margin */
+    padding: 10px 0 0;
+    /* Add padding at the top, with no padding on the sides and bottom */
     display: flex;
-    justify-content: center; /* Center align links */
+    flex-direction: column;
+    /* Changes the layout to vertical */
+    align-items: center;
+    /* Optional: Centers the items if desired */
+    background-color: black;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-bottom: 10px;
+    /* Adds space between the items vertically */
+    color: #fff;
+    /* White text for contrast against the nav background */
 }
 
-/* Main section layout using CSS Grid */
-main {
-    display: grid;
-    gap: 20px;
+nav a {
+    color: white;
+    /* Set nav links to white for contrast */
 }
 
+/* ===== Card Component Styles ===== */
 .card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    /* Small outline around the card */
+    border-radius: 4px;
+    /* Optional: Rounds the corners slightly */
+    overflow: hidden;
+    /* Ensures no content overflows, including border-radius */
+    text-align: center;
+    /* Centers all content within this card section */
 }
 
-/* Footer styling */
+.card h3 {
+    font-weight: bold;
+    /* Makes the h3 element bold */
+    background-color: #1d4d72;
+    /* Sets the background color of the h3 */
+    color: white;
+    /* Makes the text color white for contrast */
+    padding: 8px;
+    /* Adds padding inside the h3 */
+    margin: 0;
+    /* Removes the default margin */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect the full width */
+}
+
+.card p {
+    background-color: white;
+    /* Sets the background color of the p elements to white */
+    padding: 8px;
+    /* Adds padding inside the p elements */
+    margin: 0;
+    /* Removes the default margin */
+}
+
+/* ===== Activities List Styles ===== */
+#activities {
+    padding-left: 20px;
+    /* Creates space between the list and the section outline */
+    text-align: left;
+    /* Ensures the text is left-justified */
+}
+
+#activities li {
+    padding-left: 10px;
+    /* Additional space to separate bullets from text */
+    list-style-position: outside;
+    /* Ensures bullets are placed outside the padding */
+}
+
+/* ===== Footer Styles ===== */
 footer {
     text-align: center;
     margin-top: 40px;
     padding: 10px;
-    background-color: #333;
+    background-color: #1d4d72;
     color: #fff;
-}
-
-/* Styling for links */
-a {
-    color: #007bff; /* Blue link color */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover */
 }
