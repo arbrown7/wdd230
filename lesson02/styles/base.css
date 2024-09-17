@@ -1,0 +1,97 @@
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* phone or baseline views **************************/
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+.colimage {
+    width: 100%;
+    /* Ensure images fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+
+header {
+    grid-column: span 1;
+}
+
+nav {
+    grid-column: span 1;
+}
+
+footer {
+    grid-column: span 1;
+}
+
+header img {
+    width: 100px;
+    /* Set width to make the image square */
+    height: 100px;
+    /* Set height to match width */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    border-radius: 0;
+    /* No rounded corners, keeps the image square */
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+
+    header {
+        grid-column: span 2;
+    }
+    
+    nav {
+        grid-column: span 2;
+    }
+
+    footer {
+        grid-column: span 2;
+    }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+        grid-column: span 3;
+    }
+    
+    nav {
+        grid-column: span 3;
+    }
+
+    footer {
+        grid-column: span 3;
+    }
+
+}
