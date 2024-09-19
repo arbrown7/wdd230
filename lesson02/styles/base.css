@@ -29,14 +29,80 @@ main section {
 }
 
 header {
+    display: flex;
+    /* Use Flexbox to place items in a row */
+    align-items: center;
+    /* Vertically centers items */
+    justify-content: center;
+    /* Horizontally centers the content */
+    margin-bottom: 0px;
+    /* Maintain existing spacing below the header */
+    gap: 16px;
+    /* Space between the profile image and the h1 */
+    background-color: #1d4d72;
+    /* Header background color */
+    padding: 40px 20px 20px;
+    /* Adds more padding on top, then sides and bottom */
     grid-column: span 1;
+}
+
+header img {
+    width: 100px;
+    /* Set width to make the image square */
+    height: 100px;
+    /* Set height to match width */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    border-radius: 0;
+    /* No rounded corners, keeps the image square */
+}
+
+header h1 {
+    font-size: 2em;
+    /* Adjust font size as needed */
+    margin: 0;
+    /* Remove default margin */
+    color: white !important;
+    /* White text for contrast against the header background */
 }
 
 nav {
     grid-column: span 1;
 }
 
+nav ul {
+    list-style-type: none;
+    /* Remove bullets */
+    margin: 0;
+    /* Remove default margin */
+    padding: 10px 0 0;
+    /* Add padding at the top, with no padding on the sides and bottom */
+    display: flex;
+    flex-direction: column;
+    /* Changes the layout to vertical */
+    align-items: center;
+    /* Optional: Centers the items if desired */
+    background-color: black;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    /* Adds space between the items vertically */
+    color: #fff;
+    /* White text for contrast against the nav background */
+}
+
+nav a {
+    color: white;
+    /* Set nav links to white for contrast */
+}
+
 footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #1d4d72;
+    color: #fff;
     grid-column: span 1;
 }
 
