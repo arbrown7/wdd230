@@ -23,6 +23,10 @@
         min-height: unset;
     }
 
+    nav{
+        background-color: #000;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row; /* Change to horizontal layout */
