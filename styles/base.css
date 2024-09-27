@@ -12,10 +12,8 @@ ul {
 /* ===== Base Styles ===== */
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* Ensures the body is at least as tall as the viewport */
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 0;
     /* Remove default margin */
 }
@@ -34,11 +32,10 @@ a:hover {
 
 /* ===== Layout Styles ===== */
 main {
-    max-width: 800px;
-    /* Adjust max-width as needed */
     margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     /* Center align */
-    padding: 20px;
     display: grid;
     /* Main section layout using CSS Grid */
     gap: 20px;
@@ -71,8 +68,8 @@ main h2::after {
 
 /* ===== Header Styles ===== */
 header {
-    display: flex;
-    /* Use Flexbox to place items in a row */
+    grid-column: 1; /* Take up the full width */
+    display: flex; /* Use flexbox */
     align-items: center;
     /* Vertically centers items */
     justify-content: center;
@@ -108,19 +105,17 @@ header h1 {
 }
 
 /* ===== Navigation Styles ===== */
-nav ul {
-    list-style-type: none;
-    /* Remove bullets */
-    margin: 0;
-    /* Remove default margin */
-    padding: 10px 0 0;
-    /* Add padding at the top, with no padding on the sides and bottom */
-    display: flex;
-    flex-direction: column;
-    /* Changes the layout to vertical */
-    align-items: center;
-    /* Optional: Centers the items if desired */
+nav {
     background-color: black;
+    padding: 1rem;
+}
+nav ul {
+    grid-column: 1; /* Take up the full width */
+    display: flex; /* Use flexbox */
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -136,6 +131,9 @@ nav a {
 }
 
 /* ===== Card Component Styles ===== */
+section {
+    grid-column: span 1;
+}
 .card {
     border: 1px solid #ccc;
     /* Small outline around the card */
