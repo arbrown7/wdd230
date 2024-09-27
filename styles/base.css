@@ -48,8 +48,6 @@ main h2 {
     /* Centers the h2 text */
     position: relative;
     /* Position relative to allow pseudo-element placement */
-    margin-bottom: 20px;
-    /* Add some space below the h2 */
 }
 
 main h2::after {
@@ -108,10 +106,10 @@ header h1 {
 nav {
     background-color: black;
     padding: 1rem;
+    display: flex; /* Use flexbox */
 }
 nav ul {
     grid-column: 1; /* Take up the full width */
-    display: flex; /* Use flexbox */
     flex-direction: column;
     align-items: center;
     list-style-type: none; /* Remove bullets */
