@@ -29,8 +29,8 @@ main section {
 }
 
 header {
-    display: flex;
-    /* Use Flexbox to place items in a row */
+    grid-column: 1; /* Take up the full width */
+    display: flex; /* Use flexbox */
     align-items: center;
     /* Vertically centers items */
     justify-content: center;
@@ -43,18 +43,13 @@ header {
     /* Header background color */
     padding: 40px 20px 20px;
     /* Adds more padding on top, then sides and bottom */
-    grid-column: span 1;
 }
 
 header img {
-    width: 100px;
-    /* Set width to make the image square */
-    height: 100px;
-    /* Set height to match width */
-    object-fit: cover;
-    /* Ensure the image covers the area without distortion */
-    border-radius: 0;
-    /* No rounded corners, keeps the image square */
+    width: 100px;         /* Set a square width */
+    height: 100px;        /* Set a square height */
+    object-fit: cover;    /* Ensure the image covers the area without distortion */
+    border-radius: 50%;   /* Make the image a circle */
 }
 
 header h1 {
@@ -67,22 +62,18 @@ header h1 {
 }
 
 nav {
-    grid-column: span 1;
-}
-
-nav ul {
-    list-style-type: none;
-    /* Remove bullets */
-    margin: 0;
-    /* Remove default margin */
-    padding: 10px 0 0;
-    /* Add padding at the top, with no padding on the sides and bottom */
-    display: flex;
-    flex-direction: column;
-    /* Changes the layout to vertical */
-    align-items: center;
-    /* Optional: Centers the items if desired */
     background-color: black;
+    padding: 1rem;
+    display: flex; /* Use flexbox */
+    justify-content: center;
+}
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -90,6 +81,7 @@ nav ul li {
     /* Adds space between the items vertically */
     color: #fff;
     /* White text for contrast against the nav background */
+    text-align: center;
 }
 
 nav a {
@@ -107,14 +99,10 @@ footer {
 }
 
 header img {
-    width: 100px;
-    /* Set width to make the image square */
-    height: 100px;
-    /* Set height to match width */
-    object-fit: cover;
-    /* Ensure the image covers the area without distortion */
-    border-radius: 0;
-    /* No rounded corners, keeps the image square */
+    width: 100px;         /* Set a square width */
+    height: 100px;        /* Set a square height */
+    object-fit: cover;    /* Ensure the image covers the area without distortion */
+    border-radius: 50%;   /* Make the image a circle */
 }
 
 /* Tablet Views ******************************/
@@ -133,8 +121,26 @@ header img {
         grid-column: span 2;
     }
     
-    nav {
+    nav{
+        background-color: #000;
         grid-column: span 2;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Change to horizontal layout */
+        justify-content: center; /* Center nav items */
+        list-style-type: none; /* Remove bullets */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration:overline;
     }
 
     footer {
