@@ -83,14 +83,10 @@ header {
 }
 
 header img {
-    width: 100px;
-    /* Set width to make the image square */
-    height: 100px;
-    /* Set height to match width */
-    object-fit: cover;
-    /* Ensure the image covers the area without distortion */
-    border-radius: 0;
-    /* No rounded corners, keeps the image square */
+    width: 100px;         /* Set a square width */
+    height: 100px;        /* Set a square height */
+    object-fit: cover;    /* Ensure the image covers the area without distortion */
+    border-radius: 50%;   /* Make the image a circle */
 }
 
 header h1 {
@@ -107,12 +103,15 @@ nav {
     background-color: black;
     padding: 1rem;
     display: flex; /* Use flexbox */
+    justify-content: center;
 }
 nav ul {
     flex-direction: column;
     align-items: center;
     list-style-type: none; /* Remove bullets */
     margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -120,6 +119,7 @@ nav ul li {
     /* Adds space between the items vertically */
     color: #fff;
     /* White text for contrast against the nav background */
+    text-align: center;
 }
 
 nav a {

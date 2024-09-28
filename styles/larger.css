@@ -34,7 +34,14 @@
         list-style-type: none; /* Remove bullets */
         padding: 0;
         margin: 0;
-        gap: 20px; /* Add space between nav items */
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration:overline;
     }
 
     h2 {
