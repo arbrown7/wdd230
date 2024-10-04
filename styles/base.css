@@ -19,15 +19,10 @@ body {
 }
 
 a {
-    color: #0051a8;
-    /* Blue link color */
     text-decoration: none;
-    /* Remove underline */
-}
-
-a:hover {
-    text-decoration: underline;
-    /* Underline on hover */
+    display: inline-block;
+    min-width: 24px; /* Ensure a minimum width of 24px */
+    min-height: 24px; /* Ensure a minimum height of 24px */
 }
 
 /* ===== Layout Styles ===== */
@@ -35,12 +30,15 @@ main {
     margin: 0 auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
     /* Center align */
     display: grid;
     /* Main section layout using CSS Grid */
     gap: 20px;
     flex: 1;
     /* Allows the main content to grow and take up space */
+    max-width: 500px;
 }
 
 main h2 {
@@ -98,33 +96,59 @@ header h1 {
     /* White text for contrast against the header background */
 }
 
-/* ===== Navigation Styles ===== */
+/* ===== Hamburger Menu ===== */
+#menu::before {
+	content: "≡";
+    font-size: 2rem;
+}
+
+#menu {
+    display: block;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #000;
+	color: #fff;
+}
+
 nav {
-    background-color: black;
-    padding: 1rem;
-    display: flex; /* Use flexbox */
-    justify-content: center;
+	background-color: #000;
 }
-nav ul {
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none; /* Remove bullets */
-    margin: 0; /* Remove default margin */
-    display: flex;
-    justify-content: center;
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
 }
 
-nav ul li {
-    margin-bottom: 10px;
-    /* Adds space between the items vertically */
-    color: #fff;
-    /* White text for contrast against the nav background */
-    text-align: center;
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
 }
 
-nav a {
-    color: white;
-    /* Set nav links to white for contrast */
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+    font-size: 1rem;
+}
+
+.active::before {
+	content: "• ";  /* just a wayfinding symbol for the user */
 }
 
 /* ===== Card Component Styles ===== */
@@ -155,6 +179,7 @@ section {
     /* Removes the default margin */
     box-sizing: border-box;
     /* Ensures padding doesn't affect the full width */
+    padding: 1rem;
 }
 
 .card p {
@@ -179,6 +204,10 @@ section {
     /* Additional space to separate bullets from text */
     list-style-position: outside;
     /* Ensures bullets are placed outside the padding */
+}
+
+.hide {
+    display: none;
 }
 
 /* ===== Footer Styles ===== */
