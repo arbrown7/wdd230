@@ -1,0 +1,52 @@
+
+/* Inline styles just for demonstration, should be placed in a separate CSS file */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+header {
+    background-color: #46534E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header p{
+    color: white; 
+}
+h1 {
+    font-weight: 700;
+}
+p {
+    color: #333333;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.square {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border: 2px solid #333; /* Thin border */
+}
+.square-container {
+    display: flex; /* This aligns the children in a horizontal row */
+    align-items: center; /* Ensures that the items are vertically centered */
+    gap: 20px; /* Adds space between the color picker and the square */
+    margin-top: 20px;
+}
+a {
+    display: inline-block;
+    min-width: 24px !important; /* Ensure a minimum width of 24px */
+    min-height: 24px !important; /* Ensure a minimum height of 24px */
+}
+footer {
+    background-color: #46534E;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    color: white;
+}
