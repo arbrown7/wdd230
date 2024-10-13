@@ -1,0 +1,37 @@
+/* For Desktop View */
+@media (min-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    /* Show Navigation and Align to Right */
+    .nav-bottom {
+        display: flex; /* Show the full navigation */
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .nav-left ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-left ul li a:hover {
+        color: #46534a;
+    }
+
+    /* Hide Hamburger Icon */
+    .hamburger {
+        display: none; /* Hide hamburger on large screens */
+    }
+
+    /* Main */
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+}

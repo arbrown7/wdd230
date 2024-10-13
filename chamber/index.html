@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newtown Chamber of Commerce</title>
+    <meta name="description" content="Netown Chamber of Commerce Homepage">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Netown Chamber of Commerce Homepage">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autumn Ross - WDD 230 - Web Frontend Development - Course Assignment Portal">
+    <meta property="og:description" content="Autumn Ross - WDD 230 - Web Frontend Development - Course Assignment Portal">
+    <meta property="og:image" content="https://www.visitnh.gov/getmedia/6f4388e6-f496-47c1-9a24-b6a9b723b5f5/hero-fall-instagram.jpg?width=900&height=600&ext=.jpg">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        <img src="images/logo.svg" alt="Newtown Logo">
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
+
+    <div class="nav-bottom">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <!-- Newtown Image, Don't want any more -->
+   <!-- <section class="feature-image">
+        <img src="images/placeholder.jpg" alt="A view of Newtown, Pennsylvania">
+    </section> -->
+    
+    <!-- Hero Section with Call to Action -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Join the Chamber" class="hero-image">
+        <div class="cta">
+            <h2>Join the Newtown Chamber of Commerce</h2>
+            <p>Support local businesses and build a stronger community.</p>
+            <a href="#" class="cta-button">Become a Member</a>
+        </div>
+    </section>
+
+    <!-- Current Events Section -->
+    <section class="current-events">
+        <h2>Current Events</h2>
+        <ul>
+            <li><a href="#">Upcoming Event 1</a></li>
+            <li><a href="#">Upcoming Event 2</a></li>
+            <li><a href="#">Upcoming Event 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Weather Card Section -->
+    <section class="weather-cards">
+        <h2>Local Weather</h2>
+        <div class="weather-card">
+            <h3>Newtown</h3>
+            <p>72°F, Sunny</p>
+        </div>
+        <!-- Additional weather cards can be added here -->
+    </section>
+
+    <!-- Company Spotlights Section -->
+    <section class="company-spotlights">
+        <h2>Company Spotlights</h2>
+        <div class="spotlight">
+            <img src="company1.jpg" alt="Company 1">
+            <p>Company 1 - A brief description here.</p>
+        </div>
+        <div class="spotlight">
+            <img src="company2.jpg" alt="Company 2">
+            <p>Company 2 - A brief description here.</p>
+        </div>
+        <div class="spotlight">
+            <img src="company3.jpg" alt="Company 3">
+            <p>Company 3 - A brief description here.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+    <p id="lastModified"></p>
+</footer>  
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+</body>
+</html>

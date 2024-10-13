@@ -1,0 +1,128 @@
+/* Reset and Basic Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ecf1f4; /* Primary background color */
+    color: #313a37; /* Dark gray for main text */
+}
+
+/* Basic Header Styling */
+header {
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #313a37;
+    color: #ffffff;
+    border-bottom: 2px solid #313a37;
+}
+
+header img {
+    width: 100%;
+    max-width: 100px; /* Adjust as needed */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation Links (Hidden by Default for Mobile) */
+.nav-bottom {
+    display: none; /* Hide nav-bottom for mobile */
+}
+
+.nav-left ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-left ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+    display: block; /* Display hamburger icon */
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+
+/* Responsive Menu Display When Active (Optional for JavaScript-controlled toggle) */
+.nav-bottom.active {
+    display: flex; /* Show menu items when active */
+    flex-direction: column;
+    gap: 15px;
+    background-color: #313a37;
+    padding: 15px;
+    justify-content: center;
+}
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    color: #313a37;
+    position: relative;
+    z-index: 2; /* Higher z-index to ensure it’s on top */
+}
+
+.hero .hero-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cta {
+    margin-top: -150px;
+    color: #f5fffb; /* Light text color on dark overlay */
+    padding: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #46534a; /* Dark green button */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #313a37; /* Dark gray on hover */
+}
+
+.current-events,
+.weather-cards,
+.company-spotlights {
+    grid-column: span 1; /* Each takes one column */
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+}
