@@ -79,6 +79,10 @@ main {
     gap: 20px;
 }
 
+.main-heading{
+    display: flex;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
