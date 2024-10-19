@@ -26,6 +26,7 @@
         display: none; /* Hide hamburger on large screens */
     }
 
+
     /* Main */
     main {
         grid-template-columns: repeat(3, 1fr);

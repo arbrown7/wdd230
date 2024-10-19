@@ -1,3 +1,21 @@
+:root {
+    --background-color: #ecf1f4;
+    --text-color: #313a37;
+    --second-text-color: #fff;
+    --second-bg-color: #fff;
+    --third-bg-color: #313a37;
+    --border: #00000000;
+}
+
+.dark-mode {
+    --background-color: #2d2d2d;
+    --text-color: #fff;
+    --second-text-color: #fff;
+    --second-bg-color: #2d2d2d;
+    --third-bg-color: #313a37;
+    --border: #fff;
+}
+
 /* Reset and Basic Styles */
 * {
     box-sizing: border-box;
@@ -8,8 +26,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ecf1f4; /* Primary background color */
-    color: #313a37; /* Dark gray for main text */
+    background-color: var(--background-color); /* Primary background color */
+    color: var(--text-color); /* Dark gray for main text */
 }
 
 /* Basic Header Styling */
@@ -18,9 +36,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
-    background-color: #313a37;
-    color: #ffffff;
-    border-bottom: 2px solid #313a37;
+    background-color: var(--third-bg-color);
+    color: var(--second-text-color);
+    border-bottom: 2px solid var(--third-bg-color);
 }
 
 header img {
@@ -46,9 +64,56 @@ header img {
 }
 
 .nav-left ul li a {
-    color: #ffffff;
+    color: var(--second-text-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Toggle Dark Mode */
+/* Position the toggle switch in the upper-right corner */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-switch input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-switch input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s ease;
+}
+
+.toggle-switch input[type="checkbox"]:checked {
+    background-color: #4caf50;
+    /* Change color when checked */
+}
+
+.toggle-switch input[type="checkbox"]:checked::before {
+    left: 21px;
+    /* Move the toggle knob to the right when checked */
+}
+
+.toggle-switch label {
+    color: #fff;
+    display: block;
 }
 
 /* Hamburger Icon for Mobile */
@@ -56,7 +121,7 @@ header img {
     display: block; /* Display hamburger icon */
     font-size: 1.5em;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--second-text-color);
     background: none;
     border: none;
 }
@@ -67,7 +132,7 @@ header img {
     display: flex; /* Show menu items when active */
     flex-direction: column;
     gap: 15px;
-    background-color: #313a37;
+    background-color: var(--third-bg-color);
     padding: 15px;
     justify-content: center;
 }
@@ -76,18 +141,21 @@ header img {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .main-heading{
     display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 0em;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px 20px;
-    color: #313a37;
+    padding: 20px 20px;
+    color: var(--text-color);
     position: relative;
     z-index: 2; /* Higher z-index to ensure it’s on top */
 }
@@ -101,30 +169,32 @@ main {
 
 .cta {
     margin-top: -150px;
-    color: #f5fffb; /* Light text color on dark overlay */
+    color: var(--second-text-color); /* Light text color on dark overlay */
     padding: 20px;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    color: #ffffff;
-    background-color: #46534a; /* Dark green button */
+    color: var(--second-text-color);
+    background-color: var(--third-bg-color); /* Dark green button */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #313a37; /* Dark gray on hover */
+    background-color: var(--third-bg-color); /* Dark gray on hover */
 }
 
 .current-events,
 .weather-cards,
 .company-spotlights {
     grid-column: span 1; /* Each takes one column */
-    background-color: #ffffff;
+    background-color: var(--second-bg-color);
     padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--border); /* Define width, style, and color */
 }
 
 footer {

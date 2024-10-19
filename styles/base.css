@@ -21,8 +21,10 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
-    min-width: 24px; /* Ensure a minimum width of 24px */
-    min-height: 24px; /* Ensure a minimum height of 24px */
+    min-width: 24px;
+    /* Ensure a minimum width of 24px */
+    min-height: 24px;
+    /* Ensure a minimum height of 24px */
 }
 
 /* ===== Layout Styles ===== */
@@ -64,8 +66,10 @@ main h2::after {
 
 /* ===== Header Styles ===== */
 header {
-    grid-column: 1; /* Take up the full width */
-    display: flex; /* Use flexbox */
+    grid-column: 1;
+    /* Take up the full width */
+    display: flex;
+    /* Use flexbox */
     align-items: center;
     /* Vertically centers items */
     justify-content: center;
@@ -81,10 +85,14 @@ header {
 }
 
 header img {
-    width: 100px;         /* Set a square width */
-    height: 100px;        /* Set a square height */
-    object-fit: cover;    /* Ensure the image covers the area without distortion */
-    border-radius: 50%;   /* Make the image a circle */
+    width: 100px;
+    /* Set a square width */
+    height: 100px;
+    /* Set a square height */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    border-radius: 50%;
+    /* Make the image a circle */
 }
 
 header h1 {
@@ -98,63 +106,69 @@ header h1 {
 
 /* ===== Hamburger Menu ===== */
 #menu::before {
-	content: "≡";
+    content: "≡";
     font-size: 2rem;
 }
 
 #menu {
     display: block;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #000;
-	color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #000;
+    color: #fff;
 }
 
 nav {
-	background-color: #000;
+    background-color: #000;
 }
+
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	font-weight: 700;
-	transition: 0.5s;
+    display: none;
 }
 
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
     font-size: 1rem;
 }
 
 .active::before {
-	content: "• ";  /* just a wayfinding symbol for the user */
+    content: "• ";
+    /* just a wayfinding symbol for the user */
 }
+
 
 /* ===== Card Component Styles ===== */
 section {
     grid-column: span 1;
 }
+
 .card {
     border: 1px solid #ccc;
     /* Small outline around the card */
