@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autumn Ross - WDD 230 - Web Frontend Development - Lesson 06 Activity">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Responsive Images: srcset">
+    <title>Responsive Images: srcset</title>
+    <link href="styles/responsive-images.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Philadelphia Pennsylvania temple at night" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
