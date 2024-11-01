@@ -24,7 +24,7 @@
 
     <!-- Header Section -->
     <header>
-        <img src="images/profile.JPG" alt="Profile Image">
+        <img src="images/profile.webp" alt="Profile Image">
         <h1>Autumn Ross</h1>
     </header>
 
@@ -43,6 +43,16 @@
 
     <!-- Main Content Section -->
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <img src="images/hero-large.webp" alt="Philadelphia Pennsylvania temple at night" width="960" height="480">
+            </picture>
+        </div>
+        <div class="herolabel">
+			<p>Philadelphia Pennsylvania temple</p>
+		</div>
+
         <h2>WDD 230: Web Frontend Development</h2>
 
         <!-- Learning Activities Card -->
@@ -64,7 +74,7 @@
             <h3>Information</h3>
             <!-- Placeholder for weather, visits, etc. -->
             <p>Weather: Sunny</p>
-            <p>Visits: 100</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
 
         <section id="map">
@@ -82,7 +92,7 @@
     <!-- JavaScript to update dynamic content -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
-
+    <script src="scripts/visitcounter.js"></script>
 </body>
 
 </html>
