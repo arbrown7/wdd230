@@ -40,7 +40,7 @@ main {
     gap: 20px;
     flex: 1;
     /* Allows the main content to grow and take up space */
-    max-width: 500px;
+    /*max-width: 500px;*/
 }
 
 main h2 {
@@ -163,6 +163,17 @@ navigation a:active {
     /* just a wayfinding symbol for the user */
 }
 
+.herolabel {
+    position: absolute;
+    top: 35%; /* Position at the top */
+    left: 10%; /* Position from the left */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    color: #ffffff;
+    padding: 8px 12px;
+    white-space: nowrap; /* Prevents wrapping */
+    font-size: 1.2em;
+    border-radius: 5px;
+}
 
 /* ===== Card Component Styles ===== */
 section {
