@@ -235,6 +235,11 @@ section {
     display: none;
 }
 
+iframe {
+    border:0; 
+    width: 100%;
+}
+
 /* ===== Footer Styles ===== */
 footer {
     text-align: center;
