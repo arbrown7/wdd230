@@ -48,6 +48,70 @@
         grid-column: 1 / 3;
     }
 
+    /* Desktop layout: two columns */
+    .grid-layout {
+        grid-template-columns: 1fr 3fr; /* Sidebar 1/4 width, main content 3/4 */
+        gap: 20px;
+        max-width: 1200px; /* Center the layout if needed */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Images can expand to 1200px */
+        gap: 15px;
+        max-width: 1200px; /* Restrict to 1200px if you want it centered */
+        margin: 0 auto; /* Center the gallery */
+    }
+    
+    .photo-gallery img:hover{
+        box-shadow: 0 0 5px #333;
+    }
+    
+    /* Sidebar Business List */
+    .sidebar-businesses {
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: var(--second-bg-color);
+        border-radius: 5px;
+    }
+
+    .business-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .business-list li {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: var(--background-color);
+    }
+
+    .business-list h3 {
+        font-size: 1em;
+        margin: 0;
+        color: #333;
+    }
+
+    .business-list p {
+        font-size: 0.9em;
+        margin: 5px 0 10px;
+        color: #666;
+    }
+
+    .business-list a {
+        font-size: 0.9em;
+        color: var(--link);
+        text-decoration: none;
+    }
+
+    .business-list a:hover {
+        text-decoration: underline;
+    }
+
     footer {
         display: flex;
         justify-content: center;

@@ -207,6 +207,36 @@ section a {
     list-style-type: none;
 }
 
+/* Mobile layout: single column */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: var(--second-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sidebar-businesses {
+    display: none;
+}
+
 footer {
     padding: 10px;
 }

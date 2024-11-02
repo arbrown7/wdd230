@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newtown Chamber of Commerce</title>
+    <meta name="description" content="Netown Chamber of Commerce Discover Page">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Netown Chamber of Commerce Discover Page">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autumn Ross - WDD 230 - Web Frontend Development - Discover Page">
+    <meta property="og:description" content="Autumn Ross - WDD 230 - Web Frontend Development - Discover Page">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        <img src="images/logo.webp" alt="Newtown Logo">
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
+
+    <div class="nav-bottom">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Dark Mode</label>
+        </div>
+    </div>
+
+</header>
+
+<!-- Main Content Section -->
+<div class="main-heading">
+    <h1>Discover Newtown</h1>
+</div>
+
+<main class="grid-layout">
+    <aside class="sidebar">
+        <section id="visit-message"></section>
+        <section class="sidebar-content">
+            <h2>About Newtown</h2>
+            <p>Founded: </p>
+            <p>Population: </p>
+            <p>Size: </p>
+            <h2>City Demographics</h2>
+            <p>Some demographic information...</p>
+            <h2>Upcoming Events</h2>
+            <p>Events and descriptions...</p>
+            <section class="sidebar-businesses">
+                <h2>Featured Local Businesses</h2>
+                <ul class="business-list">
+                    <li>
+                        <h3>The Book Nook</h3>
+                        <p>A cozy independent bookstore offering a curated selection of literature, coffee, and community events.</p>
+                        <a href="#" target="_blank">Visit Website</a>
+                    </li>
+                    <li>
+                        <h3>Green Leaf Café</h3>
+                        <p>Farm-to-table dining with seasonal, locally sourced ingredients. Known for its brunch specials and organic coffees.</p>
+                        <a href="#" target="_blank">Visit Website</a>
+                    </li>
+                    <li>
+                        <h3>Newtown Arts & Crafts</h3>
+                        <p>Local art supply store featuring workshops and handmade goods by area artists. Great for DIY enthusiasts!</p>
+                        <a href="#" target="_blank">Visit Website</a>
+                    </li>
+                    <li>
+                        <h3>Bucks County Fitness</h3>
+                        <p>A state-of-the-art gym and fitness studio offering classes, personal training, and wellness services.</p>
+                        <a href="#" target="_blank">Visit Website</a>
+                    </li>
+                    <li>
+                        <h3>Simply Sweet Bakery</h3>
+                        <p>Family-owned bakery known for artisan bread, cakes, and pastries. Custom orders available for all occasions.</p>
+                        <a href="#" target="_blank">Visit Website</a>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- Additional sidebar information -->
+        </section>
+    </aside>
+    <section class="photo-gallery">
+        <figure>
+            <picture>
+                <source srcset="images/newtownDowntown-500.webp" media="(max-width: 500px)">
+                <source srcset="images/newtownDowntown-800.webp" media="(max-width: 1000px)">
+                <img src="images/newtownDowntown-1200.webp" alt="A street in Newtown lined with shops" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>State Street in Newtown. Photo via <a href="https://www.visitbuckscounty.com/towns-main-streets/newtown-yardley-washington-crossing/">visitbuckscounty.com</a></figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <source srcset="images/newtownTheatre-500.webp" media="(max-width: 500px)">
+                <source srcset="images/newtownTheatre-800.webp" media="(max-width: 1000px)">
+                <img src="images/newtownTheatre-1200.webp" alt="A brick movie theatre" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>The Newtown Theatre. Photo by The Newtown Theatre via <a href="https://www.facebook.com/thenewtowntheatre/photos/a.278497865608143.1073741829.277767425681187/391920367599225/?type=3&theater">Facebook</a></figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <source srcset="images/schofieldCoveredBridge-500.webp" media="(max-width: 500px)">
+                <source srcset="images/schofieldCoveredBridge-800.webp" media="(max-width: 1000px)">
+                <img src="images/schofieldCoveredBridge-1200.webp" alt="Greenery of Tyler State Park next to a covered bridge" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>Schofield Covered Bridge in Tyler State Park. Photo by Lolly via <a href="https://travelwithlolly.com/tyler-state-park/">travelwithlolly.com</a></figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <source srcset="images/farmersMarket-500.webp" media="(max-width: 500px)">
+                <source srcset="images/farmersMarket-800.webp" media="(max-width: 1000px)">
+                <img src="images/farmersMarket-1200.webp" alt="A stand of pastries for sale" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>Homemade pastries for sale at the Newtown Farmers Market. Photo via <a href="https://newtownfarmersmarket.com/">newtownfarmersmarket.com</a></figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <source srcset="images/village-500.webp" media="(max-width: 500px)">
+                <source srcset="images/village-800.webp" media="(max-width: 1000px)">
+                <img src="images/village-1200.webp" alt="Shops at the Village shopping center" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>Shops at the Village shopping center. Photo via <a href="https://www.brixmor.com/re-development/completed-projects/village-at-newtown">brixmor.com</a></figcaption>
+        </figure>
+        
+        <figure>
+            <picture>
+                <source srcset="images/washingtonsCrossing-500.webp" media="(max-width: 500px)">
+                <source srcset="images/washingtonsCrossing-800.webp" media="(max-width: 1000px)">
+                <img src="images/washingtonsCrossing-1200.webp" alt="A brick house" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>Washington's Crossing Historic Park. Photo via <a href="https://www.visitbuckscounty.com/listing/washington-crossing-historic-park/1404/">visitbuckscounty.com</a></figcaption>
+        </figure>
+        
+    </section>
+</main>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+    <p id="lastModified"></p>
+</footer>  
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+<script src="scripts/darkmode.js"></script>
+</body>
+</html>
