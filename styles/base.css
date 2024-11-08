@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #1d4d72;
+    --secondary-color: #000;
+    --text-color: #fff;
+}
+
 /* ===== Reset Styles ===== */
 body,
 h1,
@@ -78,7 +84,7 @@ header {
     /* Maintain existing spacing below the header */
     gap: 16px;
     /* Space between the profile image and the h1 */
-    background-color: #1d4d72;
+    background-color: var(--primary-color);
     /* Header background color */
     padding: 40px 20px 20px;
     /* Adds more padding on top, then sides and bottom */
@@ -100,7 +106,7 @@ header h1 {
     /* Adjust font size as needed */
     margin: 0;
     /* Remove default margin */
-    color: white !important;
+    color: var(--text-color) !important;
     /* White text for contrast against the header background */
 }
 
@@ -115,12 +121,12 @@ header h1 {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 nav {
-    background-color: #000;
+    background-color: var(--secondary-color);
 }
 
 .navigation {
@@ -138,15 +144,15 @@ nav {
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 700;
     transition: 0.5s;
 }
 
 .navigation a:hover,
 navigation a:active {
-    color: white;
-    background-color: black;
+    color: var(--text-color);
+    background-color: var(--primary-color);
 }
 
 .show li {
@@ -168,7 +174,7 @@ navigation a:active {
     top: 35%; /* Position at the top */
     left: 10%; /* Position from the left */
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-    color: #ffffff;
+    color: var(--text-color);
     padding: 8px 12px;
     white-space: nowrap; /* Prevents wrapping */
     font-size: 1.2em;
@@ -194,9 +200,9 @@ section {
 .card h3 {
     font-weight: bold;
     /* Makes the h3 element bold */
-    background-color: #1d4d72;
+    background-color: var(--primary-color);
     /* Sets the background color of the h3 */
-    color: white;
+    color: var(--text-color);
     /* Makes the text color white for contrast */
     padding: 8px;
     /* Adds padding inside the h3 */
@@ -245,6 +251,6 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 10px;
-    background-color: #1d4d72;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }

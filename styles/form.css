@@ -1,0 +1,106 @@
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 300%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="number"] {
+  width: 90%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Style for invalid fields after interaction */
+form input:invalid:not(:placeholder-shown),
+form input:focus:invalid {
+  border-color: #d32f2f; /* Red border for invalid fields */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus,
+form input[type="number"]:focus
+{
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.2);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1d4d72;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4d72;
+}
+
+button[type="submit"]:active {
+  background-color: #1d4d72;
+}
+
+/* Styling for real-time feedback messages */
+.feedback {
+  color: #d32f2f;
+  font-size: 0.85em;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+#rating {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+main p {
+    display: flex;
+    justify-content: center;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
