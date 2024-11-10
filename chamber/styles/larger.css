@@ -88,18 +88,19 @@
         padding: 10px;
         border-radius: 5px;
         background-color: var(--background-color);
+        border: 2px solid var(--border);
     }
 
     .business-list h3 {
         font-size: 1em;
         margin: 0;
-        color: #333;
+        color: var(--text-color);
     }
 
     .business-list p {
         font-size: 0.9em;
         margin: 5px 0 10px;
-        color: #666;
+        color: var(--text-color);
     }
 
     .business-list a {
@@ -110,6 +111,24 @@
 
     .business-list a:hover {
         text-decoration: underline;
+    }
+
+    .form-container,
+    .thank-you {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 20px; /* Space between columns */
+        max-width: 1200px; /* Optional: Center form */
+        margin: 0 auto;
+    }
+
+    .form-container .full-width {
+        grid-column: 1 / -1;
+    }
+    
+    .membership-benefits {
+        display: block;
+        flex: 1;
     }
 
     footer {

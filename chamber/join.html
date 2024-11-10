@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newtown Chamber of Commerce</title>
+    <meta name="description" content="Netown Chamber of Commerce Form">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Netown Chamber of Commerce Form">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autumn Ross - WDD 230 - Web Frontend Development - Chamber of Commerce Form">
+    <meta property="og:description" content="Autumn Ross - WDD 230 - Web Frontend Development - Chamber of Commerce Form">
+    <meta property="og:image" content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_1092,q_75,w_1660/v1/clients/bucks/Newtown_10_bbf035a7-bb7a-4e2d-a1c8-7ea41addd048.jpg">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        <img src="images/logo.webp" alt="Newtown Logo">
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
+
+    <div class="nav-bottom">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Dark Mode</label>
+        </div>
+    </div>
+
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <div class="form-container">
+        <form action="thankyou.html" method="post">
+  
+            <!-- First Name Field -->
+            <label for="first-name">First Name:
+              <input type="text" id="first-name" name="first-name" required>
+            </label>
+          
+            <!-- Last Name Field -->
+            <label for="last-name">Last Name:
+              <input type="text" id="last-name" name="last-name" required>
+            </label>
+          
+            <!-- Title/Position Field -->
+            <label for="title">Title/Position:
+              <input type="text" id="title" name="title" required pattern="[A-Za-z-\s]{7,}" 
+                     title="Please enter only letters, hyphens, and spaces, with at least 7 characters.">
+            </label>
+          
+            <!-- Email Field -->
+            <label for="email">Contact Email:
+              <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </label>
+          
+            <!-- Mobile Phone Field -->
+            <label for="phone">Mobile Phone:
+              <input type="tel" id="phone" name="phone" required>
+            </label>
+          
+            <!-- Business/Organization Name Field -->
+            <label for="org-name">Organization Name:
+              <input type="text" id="org-name" name="org-name" required>
+            </label>
+          
+            <!-- Membership Level Selection -->
+            <label for="membership-level">Membership Level:
+              <select id="membership-level" name="membership-level" required>
+                <option value="" disabled selected>Select level</option>
+                <option value="NP">NP Membership (Non-profit, no fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+              </select>
+            </label>
+            
+            <!-- Organization Description -->
+            <label for="org-description">Organization Description:
+              <textarea id="org-description" name="org-description"></textarea>
+            </label>
+          
+            <!-- Hidden Field for Date/Time -->
+            <input type="hidden" id="submission-time" name="submission-time">
+          
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    
+
+    <div class="membership-benefits">
+        <h2>Membership Benefits</h2>
+        <ul>
+          <li><strong>NP Membership:</strong> Access to community resources, networking.</li>
+          <li><strong>Bronze Membership:</strong> All NP benefits plus event discounts.</li>
+          <li><strong>Silver Membership:</strong> All Bronze benefits plus featured advertising.</li>
+          <li><strong>Gold Membership:</strong> All Silver benefits plus VIP access to events and exclusive offers.</li>
+        </ul>
+    </div>
+      
+          
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+    <p id="lastModified"></p>
+</footer>  
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+<script src="scripts/darkmode.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+</html>
