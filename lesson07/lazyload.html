@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autumn Ross - WDD 230 - Web Frontend Development - Lesson 07 Activity">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Lazy Loading">
+    <title>Responsive Images: srcset</title>
+    <link href="styles/bases.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+        <div class="image-container">
+            <img loading="lazy" src="https://placekitten.com/400/600"  with="400" height="600" class="fade-in-image" alt="placehold image" />
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Autumn Ross, United States&nbsp;</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
