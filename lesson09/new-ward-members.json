@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+    "familyName": "Smith",
+    "moveInDate": "2022-03-15",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "John Smith",
+        "gender": "Male",
+        "birthdate": "1985-05-20"
+      },
+      {
+        "name": "Jane Smith",
+        "gender": "Female",
+        "birthdate": "1988-11-12"
+      },
+      {
+        "name": "David Smith",
+        "gender": "Male",
+        "birthdate": "2010-02-03"
+      },
+      {
+        "name": "Emily Smith",
+        "gender": "Female",
+        "birthdate": "2012-08-27"
+      },
+      {
+        "name": "Michael Smith",
+        "gender": "Male",
+        "birthdate": "2015-04-10"
+      },
+      {
+        "name": "Sophia Smith",
+        "gender": "Female",
+        "birthdate": "2018-09-18"
+      },
+      {
+        "name": "Elijah Smith",
+        "gender": "Male",
+        "birthdate": "2020-12-05"
+      }
+    ]
+    }
+  }

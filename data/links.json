@@ -116,12 +116,12 @@
             "lesson": "09",
             "links": [
                 {   
-                    "url": "#",
+                    "url": "lesson09/new-ward-members.json",
                     "title": "JSON"                
                 },
                 {   
-                    "url": "#",
-                    "title": "Fetch"                
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"                
                 }
 
             ]

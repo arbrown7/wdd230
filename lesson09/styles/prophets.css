@@ -1,0 +1,106 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Section styling for each prophet card */
+#cards section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+#cards section:hover {
+    transform: scale(1.05);
+}
+
+#cards h2 {
+    font-size: 1.5rem;
+    color: #1b5e20;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+#cards p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+#cards img {
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+/* Focus style for interactive elements */
+#cards section:focus,
+a:focus {
+    outline: 2px solid #1b5e20;
+    outline-offset: 2px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e0f7fa;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
