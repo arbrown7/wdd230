@@ -1,0 +1,130 @@
+{
+    "lessons" : [
+        {
+            "lesson": "01",
+            "links": [
+                {   
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {   
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"                
+                },
+                {   
+                    "url": "lesson02/design.html",
+                    "title": "Design"                
+                },
+                {   
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {   
+                    "url": "lesson03/images/csscombinators.png",
+                    "title": "CSS Combinators"                
+                },
+                {   
+                    "url": "https://codepen.io/Autumn-Ross/pen/PoMPjwQ",
+                    "title": "CSS Pseudo-Element"                
+                },
+                {   
+                    "url": "https://codepen.io/Autumn-Ross/pen/oNKbvLr",
+                    "title": "Responsive Hamburger Menu"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {   
+                    "url": "https://codepen.io/Autumn-Ross/pen/JjgREEz",
+                    "title": "CSS Pseudo-Classes"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {   
+                    "url": "lesson05/bom.html",
+                    "title": "BOM Favorite Chapters"                
+                },
+                {   
+                    "url": "insert",
+                    "title": "insert"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {   
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"                
+                },
+                {   
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {   
+                    "url": "#",
+                    "title": "Lazy Load"                
+                },
+                {   
+                    "url": "#",
+                    "title": "Local Storage"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {   
+                    "url": "#",
+                    "title": "HTML Tables"                
+                },
+                {   
+                    "url": "#",
+                    "title": "HTML Forms"                
+                }
+
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {   
+                    "url": "#",
+                    "title": "JSON"                
+                },
+                {   
+                    "url": "#",
+                    "title": "Fetch"                
+                }
+
+            ]
+        }
+    ]
+}
