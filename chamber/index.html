@@ -35,10 +35,9 @@
         <nav class="nav-left">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
         <div class="toggle-switch">
@@ -51,24 +50,24 @@
 
 <!-- Main Content Section -->
 <main>
-    <!-- Newtown Image, Don't want any more -->
-   <!-- <section class="feature-image">
-        <img src="images/placeholder.jpg" alt="A view of Newtown, Pennsylvania">
-    </section> -->
-
     <div class="main-heading">
         <h1>Newtown Chamber of Commerce</h1>
     </div>
     
     <!-- Hero Section with Call to Action -->
     <section class="hero">
-        <img src="images/hero.jpg" alt="Join the Chamber" class="hero-image">
-        <div class="cta">
-            <h2>Join the Newtown Chamber of Commerce</h2>
-            <p>Support local businesses and build a stronger community.</p>
-            <a href="join.html" class="cta-button">Become a Member</a>
-        </div>
+        <picture>
+            <source srcset="images/newtownHero-400.webp" media="(max-width: 400px)">
+            <source srcset="images/newtownHero-800.webp" media="(max-width: 800px)">
+            <img src="images/newtownHero-1200.webp" alt="A street in Newtown lined with shops" width="1200" height="300" loading="lazy">
+        </picture>
     </section>
+
+    <!-- <div class="cta">
+        <h2>Join the Newtown Chamber of Commerce</h2>
+        <p>Support local businesses and build a stronger community.</p>
+        <a href="join.html" class="cta-button">Become a Member</a>
+    </div> -->
 
     <!-- Current Events Section -->
     <section class="current-events">
@@ -87,9 +86,10 @@
         <h2>Local Weather</h2>
         <div class="weather-card">
             <h3>Newtown</h3>
-            <p>72°F, Sunny</p>
+            <p>Temperature: <span id="temperature">45</span>°F</p>
+            <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span></p> <!-- Placeholder for Wind Chill -->
         </div>
-        <!-- Additional weather cards can be added here -->
     </section>
 
      <!-- Company Spotlights Section -->
@@ -124,5 +124,6 @@
 <script src="scripts/getdates.js"></script>
 <script src="scripts/hamburgermenu.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>

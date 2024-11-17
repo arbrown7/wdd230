@@ -149,46 +149,56 @@ main {
 
 .main-heading {
     display: flex;
-    justify-content: center;
+    
     margin-top: auto;
     margin-bottom: 0em;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 20px 20px;
-    color: var(--text-color);
-    position: relative;
-    z-index: 2; /* Higher z-index to ensure it’s on top */
+.main-heading h1 {
+    justify-self: center;
 }
 
-.hero .hero-image {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
+.hero {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px; /* Add space below the hero image */
+    min-height: 80px;
+}
+
+.hero img {
+    display: block;
+    width: 100%; /* Ensures it scales with the window size */
+    height: auto;
+    object-fit: cover; /* Keeps it proportionate */
+    max-height: 300px; /* Optional: sets a max height for smaller screens */
+}
+
+/*.cta h2, .cta p {
+    display: none;
 }
 
 .cta {
     margin-top: -150px;
-    color: var(--second-text-color); /* Light text color on dark overlay */
+    color: var(--second-text-color);
     padding: 20px;
 }
 
 .cta-button {
-    display: inline-block;
     padding: 10px 20px;
     color: var(--second-text-color);
-    background-color: var(--third-bg-color); /* Dark green button */
+    background-color: var(--third-bg-color);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    position: relative;
 }
 
 .cta-button:hover {
-    background-color: var(--third-bg-color); /* Dark gray on hover */
-}
+    background-color: var(--third-bg-color);
+}*/
+/*no more cta*/
 
 .current-events,
 .weather-cards,
@@ -290,6 +300,108 @@ form button[type="submit"] {
 
 .thank-you a {
     color: var(--text-color)
+}
+
+.view-toggle {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.view-toggle {
+    position: relative; /* Ensure it remains in the normal document flow */
+    text-align: center; /* Center the button horizontally */
+    margin: 1em 0; /* Add space around the button */
+    z-index: 10; /* Ensure it is layered above other content */
+}
+
+.view-toggle button {
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--third-bg-color);
+    color: var(--second-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-toggle button:hover {
+    background-color: var(--text-color);
+    color: var(--second-bg-color);
+}
+
+#directory.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 15px; /* Add space between items */
+}
+
+#directory.grid .member {
+    display: inline-block;
+    width: 100%;
+    margin: 1%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--second-bg-color);
+}
+
+#directory.list .member {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    gap: 1em; /* Space between items */
+    padding: 0.5em 1em;
+    border-bottom: 1px solid var(--border); /* Separate entries */
+    border-radius: 0; /* Remove rounded corners */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    align-items: flex-start; /* Align items at the start */
+}
+
+#directory.list .member:nth-child(odd) {
+    background-color: var(--second-bg-color); /* Light background for odd rows */
+}
+
+#directory.list .member:nth-child(even) {
+    background-color: var(--background-color); /* Darker background for even rows */
+}
+
+#directory.list .member h2,
+#directory.list .member p,
+#directory.list .member a {
+    margin: 0; /* Remove extra margin for inline elements */
+    display: inline; /* Make text elements inline */
+}
+
+#directory.list .member h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-right: 1em; /* Add space after the company name */
+}
+
+#directory.list .member a {
+    color: var(--link);
+    text-decoration: none;
+    margin-left: auto; /* Push link to the right */
+}
+
+#directory.list .member a:hover {
+    text-decoration: underline;
+}
+
+#directory.list .member img {
+    display: none; /* Hide images in list view */
+}
+
+.member img {
+    max-width: 100px;
+    margin-bottom: 1em;
+}
+
+.member h2 {
+    margin: 0.5em 0;
 }
 
 footer {
