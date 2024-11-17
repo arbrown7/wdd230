@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Bright Ideas Inc.",
+      "address": "123 Innovation Drive, Newtown, PA 18940",
+      "phone": "(215) 555-1234",
+      "website": "https://www.brightideas.com",
+      "image": "bright-ideas-logo.webp",
+      "membershipLevel": "Gold",
+      "description": "Pioneering solutions for modern challenges."
+    },
+    {
+      "name": "Keystone Dynamics",
+      "address": "456 Keystone Avenue, Newtown, PA 18940",
+      "phone": "(215) 555-5678",
+      "website": "https://www.keystonedynamics.com",
+      "image": "keystone-logo.webp",
+      "membershipLevel": "Platinum",
+      "description": "Driving Pennsylvania forward with innovation."
+    },
+    {
+      "name": "Eco Works Co.",
+      "address": "789 Greenfield Street, Newtown, PA 18940",
+      "phone": "(215) 555-9012",
+      "website": "https://www.ecoworks.com",
+      "image": "eco-works-logo.webp",
+      "membershipLevel": "Silver",
+      "description": "Sustainable practices for a greener tomorrow."
+    },
+    {
+      "name": "Liberty Traders",
+      "address": "321 Freedom Lane, Newtown, PA 18940",
+      "phone": "(215) 555-3456",
+      "website": "https://www.libertytraders.com",
+      "image": "liberty-logo.webp",
+      "membershipLevel": "Gold",
+      "description": "Facilitating trade with integrity and excellence."
+    },
+    {
+      "name": "Wellness Partners",
+      "address": "654 Serenity Blvd, Newtown, PA 18940",
+      "phone": "(215) 555-7890",
+      "website": "https://www.wellnesspartners.com",
+      "image": "wellness-logo.webp",
+      "membershipLevel": "Bronze",
+      "description": "Dedicated to health and holistic wellness."
+    },
+    {
+      "name": "Design Studios",
+      "address": "987 Creativity Lane, Newtown, PA 18940",
+      "phone": "(215) 555-4321",
+      "website": "https://www.designstudios.com",
+      "image": "design-studios-logo.webp",
+      "membershipLevel": "Gold",
+      "description": "Transforming ideas into visual masterpieces."
+    },
+    {
+      "name": "Express Logistics",
+      "address": "852 Speedy Way, Newtown, PA 18940",
+      "phone": "(215) 555-8765",
+      "website": "https://www.expresslogistics.com",
+      "image": "express-logo.webp",
+      "membershipLevel": "Silver",
+      "description": "Fast and reliable logistics solutions."
+    }
+  ]
+  
