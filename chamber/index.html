@@ -35,9 +35,9 @@
         <nav class="nav-left">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
         <div class="toggle-switch">
@@ -50,6 +50,13 @@
 
 <!-- Main Content Section -->
 <main>
+    <div class="banner">
+        <button class="close-btn">X</button>
+        <div class="banner-content">
+            <h2>Attend the Chamber of Commerce Meet & Greet!</h2>
+            <p><strong>Where:</strong> Duck Sauce <strong>&nbsp;&nbsp;&nbsp;&nbsp;When:</strong> 7:30pm Wednesday, November 27th, 2024 <strong>&nbsp;&nbsp;&nbsp;&nbsp;What:</strong> Get to know fellow business owners of Newtown.</p>
+        </div>
+    </div>    
     <div class="main-heading">
         <h1>Newtown Chamber of Commerce</h1>
     </div>
@@ -74,10 +81,26 @@
         <h2>Current Events</h2>
         <ul>
             <li>
-                <h3>Main Street Trick or Treat</h3>
-                <p>Kids can dress up and enjoy safe, family-friendly trick-or-treating at local Main Street businesses</p>
+                <h3>Holiday Lights Parade</h3>
+                <p>Join the festive fun as local businesses and organizations light up Main Street with holiday-themed floats and decorations.</p>
+                <p><strong>Date:</strong> December 2, 2024</p>
                 <a href="#">More...</a>
             </li>
+            
+            <li>
+                <h3>Farmers Market Harvest Festival</h3>
+                <p>Celebrate the season with fresh produce, handmade crafts, and live music at the annual harvest festival.</p>
+                <p><strong>Date:</strong> October 15, 2024</p>
+                <a href="#">More...</a>
+            </li>
+            
+            <li>
+                <h3>New Year's Eve Fireworks</h3>
+                <p>Ring in the new year with a spectacular fireworks display and live entertainment at the town square.</p>
+                <p><strong>Date:</strong> December 31, 2024</p>
+                <a href="#">More...</a>
+            </li>
+            
         </ul>
     </section>
 
@@ -86,9 +109,16 @@
         <h2>Local Weather</h2>
         <div class="weather-card">
             <h3>Newtown</h3>
-            <p>Temperature: <span id="temperature">45</span>°F</p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>Current Temperature: <span id="temperature"></span></p>
             <p>Wind Speed: <span id="windspeed">10</span> mph</p>
             <p>Wind Chill: <span id="windchill"></span></p> <!-- Placeholder for Wind Chill -->
+            <h3>3-Day Forecast</h3>
+            <div id="forecast">
+            </div>
         </div>
     </section>
 
@@ -125,5 +155,7 @@
 <script src="scripts/hamburgermenu.js"></script>
 <script src="scripts/darkmode.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/banner.js"></script>
 </body>
 </html>

@@ -35,6 +35,26 @@
         padding: 16px; 
     }
 
+
+    .banner {
+        grid-column: 1 / -1; /* Span all columns in a larger grid */
+        width: 100%; /* Make sure it takes up the full width */
+        flex-wrap: nowrap; /* Ensure content stays on one line */
+    }
+
+    .banner-content h2 {
+        font-size: 1.5rem; /* Adjust title size for larger screens */
+    }
+
+    .banner-content p {
+        font-size: 1.1rem;
+    }
+
+    .close-btn {
+        font-size: 1.1rem; /* Slightly larger button */
+    }
+    
+
     .main-heading{
         grid-column: 1 / -1;
         justify-content: center;
@@ -51,6 +71,12 @@
 
     .current-events {
         grid-column: 1 / 3;
+    }
+
+    #forecast {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+        gap: 1rem;
     }
 
     /* Desktop layout: two columns */

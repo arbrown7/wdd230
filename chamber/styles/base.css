@@ -147,9 +147,50 @@ main {
     gap: 10px;
 }
 
+.banner {
+    display: flex;
+    align-items: center; /* Vertically align button and content */
+    justify-content: space-between; /* Space out button and content */
+    background: var(--second-bg-color);
+    padding: 10px;
+    gap: 1rem; /* Add spacing between the button and content */
+    border: 2px solid var(--border); /* Optional: border for clarity */
+    border-radius: 5px;
+}
+
+.close-btn {
+    background-color: var(--third-bg-color); /* Button color */
+    color: var(--second-text-color); /* Text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: var(--text-color); /* Hover effect */
+    color: var(--second-bg-color);
+}
+
+.banner-content {
+    flex: 1; /* Let the content take up remaining space */
+}
+
+.banner-content h2 {
+    margin: 0 0 0.5rem 0; /* Space below title */
+    font-size: 1.25rem;
+}
+
+.banner-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
 .main-heading {
     display: flex;
-    
     margin-top: auto;
     margin-bottom: 0em;
 }
