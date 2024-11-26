@@ -6,6 +6,7 @@
     --third-bg-color: #313a37;
     --border: #00000000;
     --link: #313a37;
+    --link-hover: #5e706a;
 }
 
 .dark-mode {
@@ -16,6 +17,7 @@
     --third-bg-color: #313a37;
     --border: #fff;
     --link: #fff;
+    --link-hover: #5e706a;
 }
 
 /* Reset and Basic Styles */
@@ -216,31 +218,6 @@ main {
     max-height: 300px; /* Optional: sets a max height for smaller screens */
 }
 
-/*.cta h2, .cta p {
-    display: none;
-}
-
-.cta {
-    margin-top: -150px;
-    color: var(--second-text-color);
-    padding: 20px;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    color: var(--second-text-color);
-    background-color: var(--third-bg-color);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    position: relative;
-}
-
-.cta-button:hover {
-    background-color: var(--third-bg-color);
-}*/
-/*no more cta*/
-
 .current-events,
 .weather-cards,
 .company-spotlights {
@@ -251,8 +228,18 @@ main {
     border: 2px solid var(--border); /* Define width, style, and color */
 }
 
-section a {
+section h2:after {
+    content: ' ';
+    display: block;
+    border: 0.75px solid var(--text-color);
+}
+
+main a {
+    text-decoration: none;
     color: var(--link);
+}
+main a:hover {
+    color: var(--link-hover);
 }
 
 .current-events li{
