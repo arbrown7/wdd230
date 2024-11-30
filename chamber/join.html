@@ -37,7 +37,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="discover.html">Discover</a></li>
               <li><a href="directory.html">Directory</a></li>
-              <li><a href="#">Join</a></li>
+              <li><a href="#" class="current-page">Join</a></li>
             </ul>
         </nav>
         <div class="toggle-switch">
@@ -54,39 +54,39 @@
         <form action="thankyou.html" method="get">
   
             <!-- First Name Field -->
-            <label for="first-name">First Name:
+            <label for="first-name">First Name*:
               <input type="text" id="first-name" name="first-name" required>
             </label>
           
             <!-- Last Name Field -->
-            <label for="last-name">Last Name:
+            <label for="last-name">Last Name*:
               <input type="text" id="last-name" name="last-name" required>
             </label>
           
             <!-- Title/Position Field -->
-            <label for="title">Title/Position:
+            <label for="title">Title/Position*:
               <input type="text" id="title" name="title" required pattern="[A-Za-z\s-]{7,}" 
                      title="Please enter only letters, hyphens, and spaces, with at least 7 characters.">
             </label>
           
             <!-- Email Field -->
-            <label for="email">Contact Email:
+            <label for="email">Contact Email*:
               <input type="email" id="email" name="email" placeholder="example@domain.com" required>
             </label>
           
             <!-- Mobile Phone Field -->
-            <label for="phone">Mobile Phone:
+            <label for="phone">Mobile Phone*:
               <input type="tel" id="phone" name="phone" required>
             </label>
           
             <!-- Business/Organization Name Field -->
-            <label for="org-name">Organization Name:
+            <label for="org-name">Organization Name*:
               <input type="text" id="org-name" name="org-name" required>
             </label>
           
             <!-- Membership Level Selection -->
             <label for="membership-level">Membership Level:
-              <select id="membership-level" name="membership-level" required>
+              <select id="membership-level" name="membership-level">
                 <option value="" disabled selected>Select level</option>
                 <option value="NP">NP Membership (Non-profit, no fee)</option>
                 <option value="Bronze">Bronze Membership</option>
@@ -124,9 +124,9 @@
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
-    <p id="lastModified"></p>
-</footer>  
+  <p>Newtown Chamber of Commerce, 267-555-1234 &copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+  <p id="lastModified"></p>
+</footer>    
 
 <script src="scripts/getdates.js"></script>
 <script src="scripts/hamburgermenu.js"></script>

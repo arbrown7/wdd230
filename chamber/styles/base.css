@@ -74,6 +74,11 @@ header img {
     font-weight: bold;
 }
 
+.current-page::before {
+    content: "• ";
+    /* just a wayfinding symbol for the user */
+}
+
 /* Toggle Dark Mode */
 /* Position the toggle switch in the upper-right corner */
 .toggle-switch {
@@ -216,6 +221,26 @@ main {
     height: auto;
     object-fit: cover; /* Keeps it proportionate */
     max-height: 300px; /* Optional: sets a max height for smaller screens */
+}
+
+.button.cta {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--third-bg-color);
+    color: var(--second-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid var(--border);
+    justify-self: center;
+}
+
+.cta-container {
+    display: grid;
+    margin-top: auto;
+    margin-bottom: 0em;
 }
 
 .current-events,

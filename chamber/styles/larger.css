@@ -63,9 +63,9 @@
         grid-column: 1 / -1;
     }
 
-    .cta h2, .cta p {
-        display: block;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 100); /* Adjust blur and color */
+    .cta-container {
+        grid-column: 1 / -1;
+        justify-content: center;
     }
 
     .current-events {
