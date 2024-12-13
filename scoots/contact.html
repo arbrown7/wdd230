@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover | Newtown Chamber of Commerce</title>
+    <meta name="description" content="Netown Chamber of Commerce Discover Page">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Netown Chamber of Commerce Discover Page">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autumn Ross - WDD 230 - Web Frontend Development - Discover Page">
+    <meta property="og:description" content="Autumn Ross - WDD 230 - Web Frontend Development - Discover Page">
+    <meta property="og:image" content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_1092,q_75,w_1660/v1/clients/bucks/Newtown_10_bbf035a7-bb7a-4e2d-a1c8-7ea41addd048.jpg">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        <img src="images/logo.webp" alt="Newtown Logo">
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
+
+    <div class="nav-bottom">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="current-page">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Dark Mode</label>
+        </div>
+    </div>
+
+</header>
+
+<!-- Main Content Section -->
+<div class="main-heading">
+    <h1>Netown Chamber of Commerce: Discover Newtown</h1>
+</div>
+
+<main>
+    <h1>Contact Us</h1>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+      <h2>Essential Contact Information</h2>
+      <p><strong>Phone:</strong> +1 123-456-7890</p>
+      <p><strong>Email:</strong> contact@cozumelrentals.com</p>
+      <p><strong>Locations:</strong></p>
+      <ul>
+        <li>Location 1: 123 Beachside Drive, Cozumel</li>
+        <li>Location 2: 456 City Center, Cozumel</li>
+      </ul>
+    </section>
+  
+    <!-- Google Map -->
+    <section class="map-container">
+      <h2>Our Locations</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.123456789012!2d-86.9241234!3d20.5102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0x1234567890abcdef!2s123+Beachside+Drive%2C+Cozumel!5e0!3m2!1sen!2sus!4v1234567890123"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+  
+    <!-- Contact Us Form -->
+    <section class="form-container">
+      <h2>Contact Us</h2>
+      <form action="/submit-contact" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+        <label for="comment">Your Comment</label>
+        <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment" required></textarea>
+  
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    
+</main>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>Newtown Chamber of Commerce, 267-555-1234 &copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+    <p id="lastModified"></p>
+</footer>   
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+<script src="scripts/darkmode.js"></script>
+<script src="scripts/visitmessage.js"></script>
+</body>
+</html>

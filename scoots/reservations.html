@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join | Newtown Chamber of Commerce</title>
+    <meta name="description" content="Join Netown Chamber of Commerce">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Netown Chamber of Commerce Form">
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autumn Ross - WDD 230 - Web Frontend Development - Chamber of Commerce Form">
+    <meta property="og:description" content="Autumn Ross - WDD 230 - Web Frontend Development - Chamber of Commerce Form">
+    <meta property="og:image" content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_1092,q_75,w_1660/v1/clients/bucks/Newtown_10_bbf035a7-bb7a-4e2d-a1c8-7ea41addd048.jpg">
+</head>
+
+<body>
+<!-- Header Section -->
+<header>
+
+    <div class="logo">
+        <img src="images/logo.webp" alt="Newtown Logo">
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
+
+    <div class="nav-bottom">
+        <nav class="nav-left">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="#" class="current-page">Join</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Dark Mode</label>
+        </div>
+    </div>
+
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <div class="form-container">
+      <h1>Rental Details Form</h1>
+        <form action="thankyou.html" method="get">
+            <!-- Personal Information -->
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+              <label for="state-country">Home State or Country</label>
+              <input type="text" id="state-country" name="state_country" placeholder="Enter your home state or country" required>
+            </fieldset>
+        
+            <!-- Rental Information -->
+            <fieldset>
+              <legend>Rental Information</legend>
+              <label for="rental-date">Rental Date</label>
+              <input type="date" id="rental-date" name="rental_date" required>
+        
+              <label for="rental-period">Rental Period</label>
+              <select id="rental-period" name="rental_period" required>
+                <option value="">-- Select Rental Period --</option>
+                <option value="half-day">Half Day (3 hrs)</option>
+                <option value="full-day">Full Day</option>
+              </select>
+        
+              <label for="rental-type">Rental Type</label>
+              <select id="rental-type" name="rental_type" required>
+                <option value="">-- Select Rental Type --</option>
+                <option value="honda-metro-scooter">Honda Metro Scooter</option>
+                <option value="honda-dio-scooter">Honda Dio Scooter</option>
+                <option value="honda-pcx150-scooter">Honda PCX150 Scooter</option>
+                <option value="honda-pioneer-atv">Honda Pioneer ATV</option>
+                <option value="jeep-wrangler-4-door">Jeep Wrangler - 4 Door</option>
+                <option value="jeep-wrangler-2-door">Jeep Wrangler - 2 Door</option>
+              </select>
+        
+              <label for="rental-number">Number of Rentals</label>
+              <input type="number" id="rental-number" name="rental_number" min="1" placeholder="Enter number of rentals" required>
+            </fieldset>
+        
+            <!-- Additional Information -->
+            <fieldset>
+              <legend>Additional Information</legend>
+              <label for="cruise-line">Cruise Line (if applicable)</label>
+              <input type="text" id="cruise-line" name="cruise_line" placeholder="Enter your cruise line">
+        
+              <label for="special-comments">Special Accommodations or Comments</label>
+              <textarea id="special-comments" name="special_comments" rows="4" placeholder="Include details like drop-off requests or accessibility needs"></textarea>
+            </fieldset>
+        
+            <!-- Submit Button -->
+            <button type="submit">Submit Rental Request</button>
+          </form>
+        </form>
+    </div>          
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <p>Newtown Chamber of Commerce, 267-555-1234 &copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
+  <p id="lastModified"></p>
+</footer>    
+
+<script src="scripts/getdates.js"></script>
+<script src="scripts/hamburgermenu.js"></script>
+<script src="scripts/darkmode.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+</html>
