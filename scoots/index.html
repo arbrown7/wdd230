@@ -4,20 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scoots Motor Scooter Rental</title>
-    <meta name="description" content="Scoots Motor Scooter Rental">
-    <meta name="author" content="Autumn Ross">
-    <meta name="content" content="Scoots Motor Scooter Rental Homepage">
     <link href="../styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <title>Scoots Rentals | Homepage</title>
+    <meta name="description" content="Scoots Rentals">
+    <meta name="author" content="Autumn Ross">
+    <meta name="content" content="Scoots Rentals Homepage">
     <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Scoots Motor Scooter Rental Homepage">
-    <meta property="og:description" content="Scoots Motor Scooter Rental Homepage">
+    <meta property="og:title" content="Scoots Rentals Homepage">
+    <meta property="og:description" content="Scoots Rentals Homepage">
     <meta property="og:image" content="">
 </head>
 
@@ -25,10 +23,8 @@
 <!-- Header Section -->
 <header>
     <div class="logo">
-        <img src="images/logo.webp" alt="Newtown Logo">
+        <h1>Scoots Rentals</h1>
     </div>
-
-    <button class="hamburger" aria-label="Toggle menu">☰</button> <!-- Hamburger button -->
 
     <div class="nav-bottom">
         <nav class="nav-left">
@@ -47,36 +43,77 @@
 <main>
     <!-- Banner Section -->
     <div class="message">
-        <span>Today's High Temperature: <span id="temp-max"></span>°C</span>
-        <button onclick="closeMessage()">Close</button>
-      </div>   
+      <span>Today's High Temperature: <span id="temp-max"></span>°C</span>
+      <button onclick="closeMessage()">Close</button>
+    </div>
+  
     <div class="main-heading">
-        <h1>Scoots Motor Scooter Rental</h1>
+      <h1>Scoots Motor Scooter Rental</h1>
     </div>
     
     <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Explore Cozumel with Ease</h1>
-    <p>Rent scooters, ATVs, and Jeeps for your island adventure.</p>
-    <button onclick="window.location.href='#rentals'">Make a Reservation</button>
-  </section>
+    <section class="hero" id="home">
+      <h1>Explore Cozumel with Ease</h1>
+      <p>Rent scooters, ATVs, and Jeeps for your island adventure.</p>
+      <button onclick="window.location.href='#rentals'">Make a Reservation</button>
+    </section>
+  
+    <!-- Rentals Showcase Section -->
+    <section class="rentals-showcase" id="rentals">
+        <h2>Our Rentals</h2>
+        <p>Choose from a variety of vehicles to suit your adventure needs. Reserve today!</p>
+    
+        <div class="rentals-gallery">
+        <!-- Scooter Rental -->
+        <div class="rental-item">
+            <picture>
+            <source srcset="images/scooter-320w.webp" media="(max-width: 768px)">
+            <img src="images/scooter-400w.webp" alt="Scooter rental" width="400" height="400" loading="lazy">
+            </picture>
+            <h3>Scooters</h3>
+            <p>Affordable and perfect for quick trips around the island.</p>
+            <button onclick="window.location.href='reservations.html'">Reserve Now</button>
+        </div>
+    
+        <!-- ATV Rental -->
+        <div class="rental-item">
+            <picture>
+            <source srcset="images/atv-320w.webp" media="(max-width: 768px)">
+            <img src="images/atv-400w.webp" alt="ATV rental" width="400" height="400" loading="lazy">
+            </picture>
+            <h3>ATVs</h3>
+            <p>Rugged and ready for your off-road adventures.</p>
+            <button onclick="window.location.href='reservations.html'">Reserve Now</button>
+        </div>
+    
+        <!-- Jeep Rental -->
+        <div class="rental-item">
+            <picture>
+            <source srcset="images/jeep-320w.webp" media="(max-width: 768px)">
+            <img src="images/jeep-400w.webp" alt="Jeep rental" width="400" height="400" loading="lazy">
+            </picture>
+            <h3>Jeeps</h3>
+            <p>Spacious and air-conditioned for family fun.</p>
+            <button onclick="window.location.href='reservations.html'">Reserve Now</button>
+        </div>
+        </div>
+    </section>
+    <div class="navigation">
+        <!-- Weather Information -->
+        <section class="weather">
+            <h2>Current Weather in Cozumel</h2>
+            <p><strong>Current Temperature:</strong> <span id="current-temp"></span>°C</p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Tomorrow's Temperature (3 PM):</strong> <span id="forecast-temp"></span>°C</p>
+            <div id="weather-details"></div>
+        </section>
+        <!--Map Section-->
+        <section class="map">
+            <iframe alt="map of Cozumel, Mexico" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.305674493751!2d-86.95984122266913!3d20.501923859746935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734489824197!5m2!1sen!2sus" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
 
-  <!-- Rentals Summary -->
-  <section class="rentals" id="rentals">
-    <h2>Our Rentals</h2>
-    <div class="rental-item">Scooters: Affordable and perfect for quick trips.</div>
-    <div class="rental-item">ATVs: Rugged and ready for adventure.</div>
-    <div class="rental-item">Jeeps: Spacious and air-conditioned for family fun.</div>
-  </section>
 
-  <!-- Weather Information -->
-  <section class="weather">
-    <h2>Current Weather in Cozumel</h2>
-    <p><strong>Current Temperature:</strong> <span id="current-temp"></span>°C</p>
-    <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
-    <p><strong>Tomorrow's Temperature (3 PM):</strong> <span id="forecast-temp"></span>°C</p>
-    <div id="weather-details"></div>
-  </section>
 </main>
 
 <!-- Footer Section -->
@@ -87,7 +124,6 @@
     <a href="https://www.twitter.com" target="_blank">Twitter</a>
 </footer> 
 
-<script src="scripts/hamburgermenu.js"></script>
 <script src="scripts/weather.js"></script>
 <script src="scripts/banner.js"></script>
 </body>

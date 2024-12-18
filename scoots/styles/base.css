@@ -1,0 +1,338 @@
+/* Base Layout - Mobile First */
+
+/* Body and Basic Structure */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* Default to stacking content for mobile */
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .nav-bottom {
+    padding-top: 20px;
+  }
+  
+  .nav-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-left ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .nav-left ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .current-page::before{
+    content: "• ";
+  }
+  
+  /* Main Content Section */
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Banner Section */
+  .message {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .message button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .main-heading h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .hero button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Rentals Showcase Section */
+  .rentals-showcase {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .rentals-showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .rentals-showcase p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Rentals Gallery (Mobile View - stacked vertically) */
+  .rentals-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .rental-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .rental-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .rental-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .rental-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .rental-item button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rental-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hover effect for rental items */
+  .rental-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Weather Section */
+  .weather {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .weather h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .weather p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .weather #weather-details {
+    margin-top: 20px;
+  }
+
+  .map {
+    min-height: 450px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer Social Media Links */
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* RESERVATIONS */
+ /* Form Container */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Fieldsets */
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  input, select, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* RENTALS */
+/* General table layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    color: white;
+}
+
+.vehicle-name {
+    background-color: #007BFF;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Initially hide all columns except for the vehicle name */
+table th:not(:first-child), table td:not(:first-child) {
+    display: none;
+}
+
+/* Ensure details are stacked below the name */
+tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+tr:first-child,
+tr:nth-child(2) {
+    display: none;
+}
+
+.vehicle-details {
+    display: none; /* Make the details display when the name is clicked */
+    margin-top: 10px; /* Space between name and details */
+}

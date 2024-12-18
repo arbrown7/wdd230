@@ -1,0 +1,78 @@
+@media (min-width: 769px) {
+    .wrapper {
+        flex-direction: row; /* Arrange header, sidebar, and content side by side */
+        justify-content: space-between;
+      }
+    
+      /* Main Content Area */
+      main {
+        flex: 1; /* Main content takes most of the space */
+        padding: 20px;
+      }
+    
+      /* Rentals Gallery - Side by Side */
+      .rentals-gallery {
+        display: flex;
+        flex-direction: row; /* Arrange items side by side */
+        justify-content: space-between;
+        gap: 20px;
+      }
+    
+      .rental-item {
+        width: 32%; /* Three items side by side */
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: row; /* Arrange side by side */
+        justify-content: space-between; /* Space them evenly */
+      }
+    
+      .weather,
+      .map {
+        flex: 1; /* Both take up equal space */
+        height: 100%; /* Ensure they have equal height */
+      }
+    
+      .map {
+        overflow: hidden; /* Prevent map from overflowing */
+      }
+    
+      iframe {
+        width: 200%;
+      }
+    
+      footer {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+      }
+
+      /* RESERVATIONS */
+    /* Form Container */
+    .form-container {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* Navigation for Desktop */
+    .nav-left ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-left ul li {
+        display: inline;
+    }
+
+    /*RENTALS*/
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Rentals*/
+
+}
