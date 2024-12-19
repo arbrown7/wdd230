@@ -8,7 +8,6 @@ async function getDirectory() {
         }
 
         const data = await response.json();
-        console.log("Fetched Data:", data);  // Log the data to check if it's fetched correctly.
 
         populateTable(data);  // Call function to populate the table
     } catch (error) {

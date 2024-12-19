@@ -22,11 +22,20 @@
         width: 32%; /* Three items side by side */
       }
 
-      .navigation {
+      .information {
         display: flex;
-        flex-direction: row; /* Arrange side by side */
-        justify-content: space-between; /* Space them evenly */
-      }
+        flex-direction: row; /* Align sections side-by-side */
+        justify-content: space-between;
+        align-items: stretch; /* Make all children the same height */
+        gap: 20px; /* Space between sections */
+    }
+
+    .information section {
+        flex: 1; /* Equal width and height for all sections */
+        display: flex;
+        flex-direction: column; /* Stack inner content */
+        height: 100%; /* Ensures stretching to container height */
+    }
     
       .weather,
       .map {
@@ -36,10 +45,6 @@
     
       .map {
         overflow: hidden; /* Prevent map from overflowing */
-      }
-    
-      iframe {
-        width: 200%;
       }
     
       footer {

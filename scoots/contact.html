@@ -8,15 +8,15 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <title>Scoots Rentals | Reservations </title>
+    <title>Scoots Rentals | Contact Us </title>
     <meta name="description" content="Scoots Rentals">
     <meta name="author" content="Autumn Ross">
-    <meta name="content" content="Scoots Rentals Homepage">
+    <meta name="content" content="Scoots Rentals Contact Us">
     <meta property="og:url" content="https://arbrown7.github.io/wdd230/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Scoots Rentals Homepage">
-    <meta property="og:description" content="Scoots Rentals Homepage">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Scoots Rentals Contact Us">
+    <meta property="og:description" content="Scoots Rentals Contact Us">
+    <meta property="og:image" content="https://arbrown7.github.io/wdd230/scoots/">
 </head>
 
 <body>
@@ -29,10 +29,10 @@
     <div class="nav-bottom">
         <nav class="nav-left">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html" class="current-page">Contact</a></li>
+                <li><a href="#" class="current-page">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -44,7 +44,6 @@
 
     <!-- Contact Information -->
     <section class="contact-info">
-      <h2>Essential Contact Information</h2>
       <p><strong>Phone:</strong> +1 123-456-7890</p>
       <p><strong>Email:</strong> contact@cozumelrentals.com</p>
       <p><strong>Locations:</strong></p>
@@ -54,44 +53,40 @@
       </ul>
     </section>
   
-    <!-- Google Map -->
-    <section class="map-container">
-      <h2>Our Locations</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.123456789012!2d-86.9241234!3d20.5102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0x1234567890abcdef!2s123+Beachside+Drive%2C+Cozumel!5e0!3m2!1sen!2sus!4v1234567890123"
-        allowfullscreen="" loading="lazy">
-      </iframe>
-    </section>
-  
-    <!-- Contact Us Form -->
-    <section class="form-container">
-      <h2>Contact Us</h2>
-      <form action="/submit-contact" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-  
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-  
-        <label for="comment">Your Comment</label>
-        <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment" required></textarea>
-  
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <div class="information">
+        <!-- Google Map -->
+        <section class="map-container">
+            <h2>Our Locations</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.305674493751!2d-86.95984122266913!3d20.501923859746935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734489824197!5m2!1sen!2sus" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+        
+          <!-- Contact Us Form -->
+          <section class="form-container">
+            <h2>Contact Us</h2>
+            <form action="thankyou.html" method="get">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+              <label for="comment">Your Comment</label>
+              <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment" required></textarea>
+        
+              <button type="submit">Send Message</button>
+            </form>
+          </section>
+    </div>
     
 </main>
 
-
 <!-- Footer Section -->
-<footer>
-    <p>Newtown Chamber of Commerce, 267-555-1234 &copy; <span id="currentYear"></span> Autumn Ross Project for WDD230&nbsp;</p>
-    <p id="lastModified"></p>
-</footer>   
+<footer class="footer">
+    <h2>Stay Connected</h2>
+    <a id="social-media" href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+</footer> 
 
-<script src="scripts/getdates.js"></script>
-<script src="scripts/hamburgermenu.js"></script>
-<script src="scripts/darkmode.js"></script>
-<script src="scripts/visitmessage.js"></script>
 </body>
 </html>

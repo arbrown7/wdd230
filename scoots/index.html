@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Scoots Rentals Homepage">
     <meta property="og:description" content="Scoots Rentals Homepage">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://arbrown7.github.io/wdd230/scoots/">
 </head>
 
 <body>
@@ -54,8 +54,12 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
       <h1>Explore Cozumel with Ease</h1>
+      <picture>
+        <source srcset="images/hero-800.webp" media="(min-width: 768px)">
+        <img src="images/hero-400.webp " alt="Beach on Cozumel Mexico" loading="lazy">
+      </picture>
       <p>Rent scooters, ATVs, and Jeeps for your island adventure.</p>
-      <button onclick="window.location.href='#rentals'">Make a Reservation</button>
+      <button onclick="window.location.href='#rentals'">Make a Rental Reservation</button>
     </section>
   
     <!-- Rentals Showcase Section -->
@@ -67,38 +71,38 @@
         <!-- Scooter Rental -->
         <div class="rental-item">
             <picture>
-            <source srcset="images/scooter-320w.webp" media="(max-width: 768px)">
-            <img src="images/scooter-400w.webp" alt="Scooter rental" width="400" height="400" loading="lazy">
+            <source srcset="images/scooter-400w.webp" media="(min-width: 768px)">
+            <img src="images/scooter-320w.webp" alt="Scooter" width="320" height="320" loading="lazy">
             </picture>
             <h3>Scooters</h3>
-            <p>Affordable and perfect for quick trips around the island.</p>
+            <p>Perfect for quick tripes around the island, starting at $20!</p>
             <button onclick="window.location.href='reservations.html'">Reserve Now</button>
         </div>
     
         <!-- ATV Rental -->
         <div class="rental-item">
             <picture>
-            <source srcset="images/atv-320w.webp" media="(max-width: 768px)">
-            <img src="images/atv-400w.webp" alt="ATV rental" width="400" height="400" loading="lazy">
+            <source srcset="images/atv-400w.webp" media="(min-width: 768px)">
+            <img src="images/atv-320w.webp" alt="ATV" width="320" height="320" loading="lazy">
             </picture>
             <h3>ATVs</h3>
-            <p>Rugged and ready for your off-road adventures.</p>
+            <p>Ready for off-road adventures. Prices as low as $50.</p>
             <button onclick="window.location.href='reservations.html'">Reserve Now</button>
         </div>
     
         <!-- Jeep Rental -->
         <div class="rental-item">
             <picture>
-            <source srcset="images/jeep-320w.webp" media="(max-width: 768px)">
-            <img src="images/jeep-400w.webp" alt="Jeep rental" width="400" height="400" loading="lazy">
+            <source srcset="images/jeep-400w.webp" media="(min-width: 768px)">
+            <img src="images/jeep-320w.webp" alt="Jeep" width="320" height="320" loading="lazy">
             </picture>
             <h3>Jeeps</h3>
-            <p>Spacious and air-conditioned for family fun.</p>
+            <p>Spacious enough for family fun, starting at $60.</p>
             <button onclick="window.location.href='reservations.html'">Reserve Now</button>
         </div>
         </div>
     </section>
-    <div class="navigation">
+    <div class="information">
         <!-- Weather Information -->
         <section class="weather">
             <h2>Current Weather in Cozumel</h2>
@@ -107,9 +111,19 @@
             <p><strong>Tomorrow's Temperature (3 PM):</strong> <span id="forecast-temp"></span>°C</p>
             <div id="weather-details"></div>
         </section>
+        <!--Contact Info-->
+        <section class="home-contact-info">
+            <p><strong>Phone:</strong> +1 123-456-7890</p>
+            <p><strong>Email:</strong> contact@cozumelrentals.com</p>
+            <p><strong>Locations:</strong></p>
+            <ul>
+              <li>Location 1: 123 Beachside Drive, Cozumel</li>
+              <li>Location 2: 456 City Center, Cozumel</li>
+            </ul>
+          </section>
         <!--Map Section-->
         <section class="map">
-            <iframe alt="map of Cozumel, Mexico" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.305674493751!2d-86.95984122266913!3d20.501923859746935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734489824197!5m2!1sen!2sus" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.305674493751!2d-86.95984122266913!3d20.501923859746935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734489824197!5m2!1sen!2sus" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </div>
 
@@ -125,6 +139,5 @@
 </footer> 
 
 <script src="scripts/weather.js"></script>
-<script src="scripts/banner.js"></script>
 </body>
 </html>
